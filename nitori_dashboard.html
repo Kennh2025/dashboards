@@ -181,11 +181,45 @@ details.fold>div{padding:2px 14px 12px}
 .ov-evlist{margin:4px 0;padding-left:20px;font-size:13px}.ov-evlist li{margin:4px 0}
 .ov-ln{display:inline-block;width:16px;height:3px;margin-right:5px;vertical-align:3px;border-radius:2px}
 /* 3C & 4P tab */
-.ov-3c{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:14px}
-.ov-c{border-top:3px solid var(--a1)}.ov-c-co{border-top-color:var(--a2)}.ov-c-cp{border-top-color:var(--pos)}.ov-c h4{font-size:15px;margin:2px 0 4px}
 .ov-ul{margin:6px 0;padding-left:18px;font-size:13px}.ov-ul li{margin:4px 0;max-width:90ch}
-.ov-card-head .chip{margin-left:auto}
-.ov-4p{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.mx-verdict{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--neg);border-radius:0 8px 8px 0;padding:12px 16px;margin:6px 0 14px}
+.mx-verdict b{display:block;font-size:20px;letter-spacing:-.01em}.mx-verdict span{color:var(--muted);font-size:13.5px}
+.mx-score{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}@media (max-width:760px){.mx-score{grid-template-columns:1fr 1fr}}
+.mx-p{--c:var(--muted);--cs:var(--soft);background:var(--cs);border-radius:10px;padding:12px 14px;position:relative;min-width:0}
+.mx-neg{--c:var(--neg);--cs:var(--neg-soft)}.mx-warn{--c:var(--warn);--cs:var(--warn-soft)}.mx-field{--c:var(--field);--cs:var(--field-soft)}
+.mx-p i{position:absolute;right:12px;top:6px;font-style:normal;font-size:34px;font-weight:600;color:var(--c);opacity:.25}
+.mx-p b{display:block;font-size:15px;color:var(--c)}.mx-p span{display:block;font-size:13.5px;font-weight:500;margin-top:2px}.mx-p em{display:block;font-style:normal;font-size:12px;color:var(--muted);margin-top:4px}
+.mx-key{font-size:12px;color:var(--muted);margin:8px 0 0;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}.mx-src{opacity:.8}
+.mx-dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);margin-right:-6px}
+.mx-3c{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}@media (max-width:860px){.mx-3c{grid-template-columns:1fr}}
+.mx-c{background:var(--surface);border:1px solid var(--line);border-top:4px solid var(--a1);border-radius:8px;padding:12px 14px;min-width:0}
+.mx-co{border-top-color:var(--a2)}.mx-cp{border-top-color:var(--pos)}
+.mx-ch{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:600;color:var(--muted)}
+.mx-big{font-family:var(--mono);font-size:38px;font-weight:500;letter-spacing:-.03em;line-height:1.15;margin-top:4px}
+.mx-cap{font-size:12px;color:var(--muted);margin:2px 0 6px}
+.mx-pts{margin:6px 0 0;padding-left:16px;font-size:13px}.mx-pts li{margin:3px 0}
+.mx-svg{width:100%;height:auto;display:block;margin-top:4px}
+.mx-ax{stroke:var(--line);stroke-width:1.5}.mx-zero{stroke:var(--muted);stroke-dasharray:3 3;stroke-width:1}
+.mx-svg text{font-size:11.5px;fill:var(--ink)}.mx-svg .mx-al{fill:var(--muted);font-size:10.5px}.mx-svg .mx-v{font-family:var(--mono);font-size:12px}.mx-svg .mx-tag{fill:var(--muted);font-size:10.5px}
+.mx-pt circle{fill:var(--muted);stroke:var(--surface);stroke-width:2}.mx-me circle{fill:var(--a1)}.mx-me text{font-weight:600;fill:var(--a1)}
+.mx-sm{max-width:380px}.mx-rn{fill:var(--neg)}.mx-rp{fill:var(--pos)}
+.mx-roe{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;margin-top:8px;font-size:12px;color:var(--muted)}
+.mx-roe svg{width:100%;height:40px}.mx-roe b{font-family:var(--mono);font-size:14px;color:var(--neg)}
+.mx-line{fill:none;stroke:var(--neg);stroke-width:2.5;stroke-linejoin:round}.mx-lp{fill:var(--neg)}
+.mx-4p{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:14px}
+.mx-card{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:0 10px 10px 0;padding:12px 14px;display:flex;flex-direction:column;min-width:0}
+.mx-hd{display:flex;align-items:center;gap:8px;margin-bottom:8px}.mx-hd b{font-size:16px}.mx-hd span{margin-left:auto;font-size:11px;font-weight:500;padding:2px 8px;border-radius:99px;background:var(--cs);color:var(--c)}
+.mx-vs>div{display:grid;grid-template-columns:52px 1fr 56px;gap:8px;align-items:center;font-size:12.5px;margin:4px 0}.mx-vs i{font-style:normal;color:var(--muted)}.mx-vs em{font-style:normal;font-family:var(--mono);text-align:right}
+.mx-bar{height:14px;background:var(--soft);border-radius:3px}.mx-bar s{display:block;height:100%;border-radius:3px}.mx-negbar{background:var(--neg)}
+.mx-stack{display:flex;height:28px;border-radius:5px;overflow:hidden}.mx-stack s{display:flex;align-items:center;padding-left:6px;color:#fff;font-size:11.5px;font-family:var(--mono);text-decoration:none;white-space:nowrap;overflow:hidden}
+.mx-nums{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin:4px 0}.mx-nums div{background:var(--bg);border-radius:6px;padding:6px 8px}
+.mx-nums b{display:block;font-family:var(--mono);font-size:17px;font-weight:500}.mx-nums span{font-size:11px;color:var(--muted)}
+.mx-q{font-size:54px;font-weight:600;color:var(--field);line-height:1;margin:2px 0}
+.mx-in{margin-top:auto;padding-top:8px;border-top:1px dashed var(--line);font-size:12px;color:var(--muted)}.mx-pts+.mx-in{margin-top:auto}
+.mx-card ul.mx-pts{margin-bottom:8px}
+.mx-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}@media (max-width:760px){.mx-flow{grid-template-columns:1fr 1fr}}
+.mx-flow div{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+.mx-flow b{display:block;font-size:14px}.mx-flow span{display:block;font-size:13px;color:var(--a1);font-weight:500}.mx-flow em{display:block;font-style:normal;font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:4px}
 </style>
 
 <div id="tip" role="tooltip"></div>
@@ -290,106 +324,98 @@ details.fold>div{padding:2px 14px 12px}
 <p class=ov-small>History explains the direction; it cannot say how far Nitori's shelf prices actually moved, item by item, against MUJI, IKEA and Cainz. That is the job of the fixed-basket panel (matched-basket price gap and promotion intensity), which starts collecting from now on; there is no item-level price history to rebuild legitimately.</p>
 <p class=ov-fine>Source: Nitori Holdings IR, monthly domestic sales YoY (株式会社ニトリ月次国内売上高前年比推移), read 2026-10-22. Derived figures only; the company's tables are not reproduced. Price actions: news sources as listed.</p></template>
 <template id=ov-tpl-mix>
-<h2>3C &amp; 4P</h2>
-<p class=ov-lead>The marketing view of the same question the model asks: why existing-store customers fell to 92.8% in FY54 while the margin held. 3C sets the scene (customer, competitors, company); 4P breaks Nitori's offer into the levers that move the model's inputs. Figures come from the other tabs of this dashboard; judgements are marked as mine.</p>
-<div class=ov-callout><b>Bottom line (my reading).</b> Nitori's strength is on the cost side: one company from design to doorstep, a 53.2% gross margin and a 13.8% operating margin against 4.3% to 9.4% at listed peers. Customer growth has moved to lifestyle and small-ticket formats (MUJI +18.6%, Seria +8.2%), where Nitori competes mainly on price. Of the 4Ps, Price is the lever whose effect on traffic is fading and Product is the gap the company itself admits. So margin is defended, growth and ROE (14.1% FY50 → 9.4% FY54) are not: consistent with the underweight view, not a proof of it.</div>
+<h2>3C &amp; 4P at a glance</h2>
+<div class=mx-verdict><b>Margin defended, growth not.</b> <span>Nitori wins on cost; customers are moving to newness and small tickets, where MUJI and Seria win.</span></div>
 
-<h2>3C: customer, competitors, company</h2>
-<div class=ov-3c>
-<div class='ov-box ov-c ov-c-cu'><h4>Customer</h4>
-<p class=ov-small>Japanese households buying furniture and home furnishings in a mature market.</p>
-<ul class=ov-ul>
-<li>Existing-store customers 92.8% and sales 95.8% of the prior year in FY54; the company blames too few new products.</li>
-<li>Price-sensitive: over fifteen years customers and average ticket move in opposite directions (Price &amp; traffic history tab). 2022 price rises → ticket up, customers down until 2024-04; 2024 cuts → customers up.</li>
-<li>Latest regime (12-month averages, 2025-06 → 2026-09): customers down, ticket up. FY2027/3 to date: customers 100.8, ticket 99.3, an early but small turn.</li>
-<li>Online share of Nitori-business revenue 11.0%, down 0.5 pt (¥96.8bn → ¥90.9bn).</li>
-</ul>
-<p class=ov-fine>Gap: market size (METI Commercial Dynamics Statistics) and customer demographics are not sourced yet.</p></div>
-<div class='ov-box ov-c ov-c-co'><h4>Competitors</h4>
-<p class=ov-small>Two fronts: lifestyle and small-ticket chains are taking the growth; home centres are low-margin and flat.</p>
-<ul class=ov-ul>
-<li><b>MUJI</b>: closest listed rival on product (storage, bedding, kitchen, small furniture). Growth +18.6%, op margin 9.4%, forward P/E 34.8x.</li>
-<li><b>Seria</b>: small ticket, high frequency; competes with Deco Home. Growth +8.2%, ROE 16.3%.</li>
-<li><b>IKEA Japan</b>: the only rival with the same furniture-plus-furnishings concept; few destination stores, self-assembly.</li>
-<li><b>DCM, Kohnan, Cainz</b>: home centres, overlap with Shimachu more than core Nitori. DCM −0.4%, Kohnan +3.7%, margins 5.7% and 4.3%.</li>
-</ul>
-<p class=ov-fine>Peer figures: latest completed years, Yahoo! Finance Japan 2026-10-14 (secondary), as on the Company &amp; industry tab.</p></div>
-<div class='ov-box ov-c ov-c-cp'><h4>Company</h4>
-<p class=ov-small>'Manufacturing, logistics and IT retailer': own design, own factories in Vietnam, own logistics (Home Logistics).</p>
-<ul class=ov-ul>
-<li>Gross margin 53.2%, operating margin 13.8% (FY54), highest of the peer set.</li>
-<li>Scale: 1,069 stores (Japan 860, overseas 209), revenue ¥912.2bn (−1.8%).</li>
-<li>Weak points: imports priced in dollars (purchase rate 148.06 JPY/USD in FY54, plan 155); ROE down from 14.1% to 9.4% in five years; N+ apparel shrinking; overseas churn (+30 / −34 stores).</li>
-<li>Shimachu back to profit (¥7.2bn) on private brands and floor space given to Nitori.</li>
-</ul></div>
+<div class=mx-score>
+<div class='mx-p mx-neg'><i>P</i><b>Product</b><span>Too few new products</span><em>admitted in FY54 filing</em></div>
+<div class='mx-p mx-neg'><i>P</i><b>Price</b><span>Cuts stopped lifting traffic</span><em>customers 93.0 in FY26/3</em></div>
+<div class='mx-p mx-warn'><i>P</i><b>Place</b><span>Logistics strong, online weak</span><em>online −6%</em></div>
+<div class='mx-p mx-field'><i>P</i><b>Promotion</b><span>Not disclosed</span><em>needs field data</em></div>
 </div>
-<h3>What 3C says together</h3>
-<table class=ov-tbl><tr><th>What the customer is rewarding</th><th>Who wins it</th><th>Nitori's position</th></tr>
-<tr><td>Newness and design</td><td>MUJI (brand, +18.6%)</td><td>Admitted gap: too few new products, merchandising being reorganised</td></tr>
-<tr><td>Small ticket, close to home, frequent visits</td><td>Seria (+8.2%)</td><td>Deco Home (185 stores, +22 / −9 in FY54) answers this, at 580 m² per store</td></tr>
-<tr><td>Low price for whole-room furniture, delivered</td><td>Nitori</td><td>Still the leader; own logistics is a real moat. But this is the segment where traffic fell</td></tr>
-<tr><td>Online convenience</td><td>Not measured</td><td>Online sales down 6% in FY54</td></tr>
-</table>
-<p class=ov-fine>Table is my judgement built from the figures above; it is a hypothesis for the field work, not a measured result.</p>
+<p class=mx-key><span class='mx-dot mx-neg'></span>supports underweight <span class='mx-dot mx-warn'></span>mixed <span class='mx-dot mx-field'></span>needs field data <span class=mx-src>· my judgement from the dashboard's sourced figures</span></p>
 
-<h2>4P: Nitori's marketing mix</h2>
-<p class=ov-lead>Each card: what Nitori does, who beats it, the evidence, my signal for the view, and the model input it moves. Signals: <span class='chip pos'>supports Nitori</span> <span class='chip warn'>mixed</span> <span class='chip neg'>supports underweight</span> <span class='chip field'>needs field data</span></p>
-<div class='ov-cards ov-4p'>
-<div class=ov-card><div class=ov-card-body>
-<div class=ov-card-head><h4>Product</h4><span class='chip neg'>supports underweight</span></div>
-<p class=ov-model>Own-designed furniture and home furnishings for Japanese homes; the range runs from big-box furniture (Nitori) to small goods (Deco Home) and DIY (Shimachu).</p>
-<div class=ov-lab>Evidence</div><ul>
-<li>FY54 filing: insufficient timely new-product proposals cut customer satisfaction; the merchandising organisation is being changed (p.25).</li>
-<li>Apparel extension N+ shrinking: 30 stores, 14 closed, none opened in FY54.</li>
-<li>MUJI wins on brand and design in the same categories.</li></ul>
-<div class=ov-lab>Model input</div><p class=ov-small>Existing-store customers (existing-store growth 1.5% / 2.0% / 1.5%). Field check C4: share of display items labelled new, Nitori vs MUJI.</p>
-</div></div>
-<div class=ov-card><div class=ov-card-body>
-<div class=ov-card-head><h4>Price</h4><span class='chip neg'>supports underweight</span></div>
-<p class=ov-model>Value positioning: 'お、ねだん以上。' (more than the price). Price cuts are the traditional answer to falling traffic.</p>
-<div class=ov-lab>Evidence</div><ul>
-<li>The 2022 rises (10-20% on some furniture) coincide with customers down / ticket up until 2024-04; the 2024 cuts with customers up (2024-08 → 2025-04). A correlation, not proof (Price &amp; traffic history tab).</li>
-<li>Despite the 2024 cuts, the 12-month view turned back to customers down / ticket up from 2025-06.</li>
-<li>Weak yen: purchase rate 148.06 JPY/USD in FY54, plan 155. Cutting prices again would eat the 53.2% gross margin.</li></ul>
-<div class=ov-lab>Model input</div><p class=ov-small>Gross margin (53.3% / 53.5% / 53.5%) and existing-store growth. Field check C1: matched-basket price gap vs MUJI (score 17, top priority).</p>
-</div></div>
-<div class=ov-card><div class=ov-card-body>
-<div class=ov-card-head><h4>Place</h4><span class='chip warn'>mixed</span></div>
-<p class=ov-model>National store network, own logistics to the doorstep, online through Nitori Net, 209 stores in 11 overseas markets.</p>
-<div class=ov-lab>Evidence</div><ul>
-<li>Strength: 593 Nitori, 185 Deco Home, 52 Shimachu; own delivery (Home Logistics) vs IKEA's self-service; Kawasaki distribution centre under construction.</li>
-<li>Small-format push: Deco Home +22 / −9 and NITORI EXPRESS in cities.</li>
-<li>Weak: online 11.0% of Nitori-business revenue and falling; overseas +30 / −34, US exited in April 2023.</li></ul>
-<div class=ov-lab>Model input</div><p class=ov-small>New-store contribution (2.0% / 2.5% / 2.5%) and overseas growth (8% / 12% / 12%). Field checks C2 (traffic and conversion) and C3 (take-home stockouts).</p>
-</div></div>
-<div class=ov-card><div class=ov-card-body>
-<div class=ov-card-head><h4>Promotion</h4><span class='chip field'>needs field data</span></div>
-<p class=ov-model>Brand slogan and nationwide 'price-cut declarations' and 'price review' waves that double as advertising events.</p>
-<div class=ov-lab>Evidence</div><ul>
-<li>Price-review waves are announced as campaigns (wave 3 in 2024-10: 264 items at Deco Home and Nitori Net).</li>
-<li>Promotion intensity (share of items on offer, depth of discounts) is not disclosed.</li>
-<li>Advertising expense is not yet pulled from the annual securities report.</li></ul>
-<div class=ov-lab>Model input</div><p class=ov-small>SG&amp;A ratio (39.8% / 39.6% / 39.5%) and the effective price behind the average ticket. The fixed-basket panel records promotion intensity.</p>
-</div></div>
+<h2>3C</h2>
+<div class=mx-3c>
+<div class='mx-c mx-cu'><div class=mx-ch>Customer</div>
+<div class=mx-big>92.8%</div><div class=mx-cap>existing-store customers vs prior year, FY54</div>
+<ul class=mx-pts><li>Price-sensitive: price up → traffic down</li><li>Online share 11.0%, falling</li></ul></div>
+<div class='mx-c mx-co'><div class=mx-ch>Competitors</div>
+<svg class=mx-svg viewBox="0 0 300 190" role=img aria-label="Revenue growth vs operating margin: Nitori has the highest margin but negative growth">
+<line x1=40 y1=160 x2=290 y2=160 class=mx-ax /><line x1=40 y1=10 x2=40 y2=160 class=mx-ax />
+<line x1=67 y1=10 x2=67 y2=160 class=mx-zero /><text x=67 y=174 text-anchor=middle class=mx-al>0%</text>
+<text x=180 y=184 text-anchor=middle class=mx-al>Revenue growth →</text>
+<text x=26 y=85 text-anchor=middle class=mx-al transform="rotate(-90 26 85)">Op margin →</text>
+<g class=mx-pt><circle cx=206 cy=61 r=6 /><text x=206 y=50 text-anchor=middle>MUJI</text></g>
+<g class=mx-pt><circle cx=128 cy=74 r=6 /><text x=128 y=63 text-anchor=middle>Seria</text></g>
+<g class=mx-pt><circle cx=95 cy=115 r=6 /><text x=105 y=119>Kohnan</text></g>
+<g class=mx-pt><circle cx=64 cy=100 r=6 /><text x=74 y=104>DCM</text></g>
+<g class='mx-pt mx-me'><circle cx=54 cy=15 r=8 /><text x=67 y=19>Nitori 13.8% · −1.8%</text></g>
+</svg>
+<div class=mx-cap>Nitori: top margin (13.8%), only one shrinking (−1.8%)</div></div>
+<div class='mx-c mx-cp'><div class=mx-ch>Company</div>
+<div class=mx-big>53.2%</div><div class=mx-cap>gross margin: design → factory → logistics → store</div>
+<div class=mx-roe><span>ROE</span>
+<svg viewBox="0 0 160 46" aria-label="ROE FY50 14.1% to FY54 9.4%"><polyline points="8,8 44,18 80,24 116,36 152,37" class=mx-line /><circle cx=8 cy=8 r=3 class=mx-lp /><circle cx=152 cy=37 r=3 class=mx-lp /></svg>
+<b>14.1% → 9.4%</b></div>
+<div class=mx-cap>FY50 → FY54; weak yen (148 → 155 JPY/USD) hits import costs</div></div>
 </div>
 
-<h3>From 4P to the valuation</h3>
-<table class=ov-tbl><tr><th>P</th><th>Driver in the revenue tree</th><th>Model input (FY27E / 28E / 29E)</th><th>What would change my mind</th></tr>
-<tr><td>Product</td><td>Purchasing customers (repeat visits)</td><td>Existing-store growth 1.5% / 2.0% / 1.5%</td><td>New-product share on display at or above MUJI; monthly customers above 100 for several months</td></tr>
-<tr><td>Price</td><td>Average ticket → effective price level</td><td>Gross margin 53.3% / 53.5% / 53.5%</td><td>Basket price gap vs MUJI widening in Nitori's favour without a gross-margin loss</td></tr>
-<tr><td>Place</td><td>Store count, online, overseas</td><td>New stores 2.0% / 2.5% / 2.5%; overseas 8% / 12% / 12%</td><td>Online back to growth; overseas openings without matching closures</td></tr>
-<tr><td>Promotion</td><td>Effective price, SG&amp;A</td><td>SG&amp;A ratio 39.8% / 39.6% / 39.5%</td><td>Traffic recovering with promotion intensity flat</td></tr>
-</table>
-<p class=ov-fine>Model inputs are the defaults on the Forecast &amp; DCF tab; field checks C1 to C4 are on the Overview tab.</p>
+<h2>4P</h2>
+<div class=mx-4p>
+<div class='mx-card mx-neg'><div class=mx-hd><b>Product</b><span>supports underweight</span></div>
+<div class=mx-vs><div><i>MUJI</i><div class=mx-bar><s style='width:100%;background:var(--a2)'></s></div><em>+18.6%</em></div><div><i>Seria</i><div class=mx-bar><s style='width:44%;background:var(--a2)'></s></div><em>+8.2%</em></div><div><i>Nitori</i><div class=mx-bar><s class=mx-negbar style='width:10%'></s></div><em class=neg>−1.8%</em></div></div>
+<div class=mx-cap>revenue growth, latest year</div>
+<ul class=mx-pts><li>Company admits too few new products (FY54 filing p.25)</li><li>N+ apparel: 14 stores closed, 0 opened</li></ul>
+<div class=mx-in>Model: existing-store growth · Field check C4</div></div>
 
-<h3>Still to add</h3>
-<ul class=ov-ul>
-<li>Market size for home furnishings in Japan (METI Commercial Dynamics Statistics).</li>
-<li>Advertising expense from the annual securities report (広告宣伝費) for the Promotion card.</li>
-<li>Customer profile (age, household type) from a primary or survey source.</li>
-<li>Matched price pairs vs MUJI, IKEA and Cainz from the fixed-basket panel, to turn the Price signal into a number.</li>
-</ul>
-<p class=ov-fine>Sources: Annual securities report FY54 (year to Mar 2026); Factbook FY2025; Nitori monthly domestic sales; peer data from Yahoo! Finance Japan 2026-10-14 (secondary). All via the other tabs of this dashboard.</p>
+<div class='mx-card mx-neg'><div class=mx-hd><b>Price</b><span>supports underweight</span></div>
+<svg class="mx-svg mx-sm" viewBox="0 0 300 135" role=img aria-label="Existing-store customers, change vs prior year by fiscal year">
+<line x1=10 y1=50 x2=290 y2=50 class=mx-ax />
+<rect x=20 y=50 width=40 height=33 class=mx-rn /><text x=40 y=98 text-anchor=middle class=mx-v>−5.5</text><text x=40 y=128 text-anchor=middle class=mx-al>FY23/3</text>
+<rect x=75 y=50 width=40 height=4 class=mx-rn /><text x=95 y=70 text-anchor=middle class=mx-v>−0.7</text><text x=95 y=128 text-anchor=middle class=mx-al>FY24/3</text>
+<rect x=130 y=43 width=40 height=7 class=mx-rp /><text x=150 y=37 text-anchor=middle class=mx-v>+1.2</text><text x=150 y=128 text-anchor=middle class=mx-al>FY25/3</text>
+<rect x=185 y=50 width=40 height=42 class=mx-rn /><text x=205 y=107 text-anchor=middle class=mx-v>−7.0</text><text x=205 y=128 text-anchor=middle class=mx-al>FY26/3</text>
+<rect x=240 y=45 width=40 height=5 class=mx-rp /><text x=260 y=39 text-anchor=middle class=mx-v>+0.8</text><text x=260 y=128 text-anchor=middle class=mx-al>FY27 YTD</text>
+<text x=40 y=16 text-anchor=middle class=mx-tag>▲ 2022 rises</text><text x=150 y=16 text-anchor=middle class=mx-tag>▼ 2024 cuts</text>
+</svg>
+<div class=mx-cap>existing-store customers, % change vs prior year</div>
+<ul class=mx-pts><li>Price up → customers down; 2024 cuts helped only briefly</li><li>Weak yen: more cuts would eat the 53.2% gross margin</li></ul>
+<div class=mx-in>Model: gross margin, existing-store growth · Field check C1 (top priority)</div></div>
+
+<div class='mx-card mx-warn'><div class=mx-hd><b>Place</b><span>mixed</span></div>
+<div class=mx-stack><s style='width:75.7%;background:var(--a1)'>Stores 75.7%</s><s style='width:11%;background:var(--a2)'>11%</s><s style='width:7.6%;background:var(--pos)'></s><s style='width:5.7%;background:var(--muted)'></s></div>
+<div class=mx-cap><b style='color:var(--a1)'>■</b> stores <b style='color:var(--a2)'>■</b> online <b style='color:var(--pos)'>■</b> overseas <b style='color:var(--muted)'>■</b> other · Nitori business FY54</div>
+<div class=mx-nums><div><b>1,069</b><span>stores</span></div><div><b class=pos>+13</b><span>Deco Home net</span></div><div><b class=neg>−6%</b><span>online sales</span></div><div><b class=neg>−4</b><span>overseas net</span></div></div>
+<ul class=mx-pts><li>Own delivery (Home Logistics) vs IKEA self-service</li></ul>
+<div class=mx-in>Model: new stores, overseas growth · Field checks C2, C3</div></div>
+
+<div class='mx-card mx-field'><div class=mx-hd><b>Promotion</b><span>needs field data</span></div>
+<div class=mx-q>?</div>
+<div class=mx-cap>promotion intensity and ad spend not disclosed</div>
+<ul class=mx-pts><li>Price cuts are run as campaigns ('price review' waves)</li><li>To add: 広告宣伝費 from the securities report</li></ul>
+<div class=mx-in>Model: SG&amp;A ratio · Fixed-basket panel</div></div>
+</div>
+
+<h2>4P → valuation</h2>
+<div class=mx-flow>
+<div><b>Product</b><span>→ customers</span><em>existing-store growth 1.5 / 2.0 / 1.5%</em></div>
+<div><b>Price</b><span>→ ticket, margin</span><em>gross margin 53.3 / 53.5 / 53.5%</em></div>
+<div><b>Place</b><span>→ store count</span><em>new stores 2.0 / 2.5 / 2.5%</em></div>
+<div><b>Promotion</b><span>→ cost</span><em>SG&amp;A 39.8 / 39.6 / 39.5%</em></div>
+</div>
+<p class=ov-fine>FY27E / 28E / 29E defaults from the Forecast &amp; DCF tab.</p>
+
+<details class=fold><summary>Details: evidence, what would change my mind, data gaps</summary><div>
+<table class=ov-tbl><tr><th>P</th><th>What would change my mind</th></tr>
+<tr><td>Product</td><td>New-product share on display at or above MUJI; monthly customers above 100 for several months</td></tr>
+<tr><td>Price</td><td>Basket price gap vs MUJI widening in Nitori's favour without a gross-margin loss</td></tr>
+<tr><td>Place</td><td>Online back to growth; overseas openings without matching closures</td></tr>
+<tr><td>Promotion</td><td>Traffic recovering with promotion intensity flat</td></tr></table>
+<h3>Data gaps</h3>
+<ul class=ov-ul><li>Japan home-furnishings market size (METI Commercial Dynamics Statistics)</li><li>Advertising expense (広告宣伝費) from the annual securities report</li><li>Customer profile (age, household type)</li><li>Matched price pairs vs MUJI, IKEA, Cainz from the fixed-basket panel</li></ul>
+<p class=ov-fine>Price chart: FY average of monthly existing-store customers YoY (Price &amp; traffic history tab); the link to price actions is a correlation, not proof. Competitor chart: latest completed years, Yahoo! Finance Japan 2026-10-14 (secondary). Company: Annual securities report FY54; Factbook FY2025. Signals and the 3C reading are my judgement.</p>
+</div></details>
 </template>
 
 <script>
